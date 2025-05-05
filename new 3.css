@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.toggle-wrapper {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  text-align: center;
+}
+
+.toggle-wrapper p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+}
+
+/* Button appearance */
+button {
+  width: 80px;
+  height: 36px;
+  background-color: #333;        /* Very dark grey in light mode */
+  color: white;
+  border: 2px solid #666;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button {
+  background-color: #ddd;        /* Very light grey in dark mode */
+  color: black;
+  border-color: #aaa;
+}
